@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OBELISK — Digital Studio for Games, Brands & Digital Culture</title>
+  <meta name="description"
+    content="OBELISK is an independent digital studio building games, brands and experimental digital experiences. Strategy, design, development and motion under one roof.">
+  <meta name="theme-color" content="#07070A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OBELISK — We Make Digital Impact.">
+  <meta property="og:description"
+    content="An independent digital studio building games, brands and experimental digital experiences.">
+  <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon_atoms.ico" type="image/x-icon">
+
+  <!-- Fonts: display (Anton), UI (Archivo), labels (JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Enables progressive-enhancement styles only while scripting is healthy. -->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.replace('no-js', 'js');
+      // Safety net: if the module bundle never boots, reveal all content again.
+      window.addEventListener('load', function () {
+        if (!window.__obeliskReady) root.classList.remove('js');
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#work">Skip to selected work</a>
+
+  <!-- ══ Desktop cursor (decorative, enabled only for fine pointers) ══ -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__ring"></span>
+  </div>
+
+  <!-- ══ Page load intro ══ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__row">
+      <span class="loader__mark">OBELISK</span>
+      <span class="loader__count" id="loaderCount">00</span>
+    </div>
+    <div class="loader__bar"><span class="loader__bar-fill" id="loaderBar"></span></div>
+  </div>
+
+  <!-- ══ Navigation ══ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="#top" aria-label="OBELISK — back to top">
+        <span class="nav__logo-mark" aria-hidden="true"></span>
+        <span class="nav__logo-text">OBELISK</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a class="nav__link" href="#work" data-spy="work"><span>Work</span></a>
+        <a class="nav__link" href="#studio" data-spy="studio"><span>Studio</span></a>
+        <a class="nav__link" href="#services" data-spy="services"><span>Services</span></a>
+        <a class="nav__link" href="#contact" data-spy="contact"><span>Contact</span></a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="pill pill--sm nav__cta" href="#contact" data-magnetic>Let's Talk</a>
+        <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="mobilePanel"
+          aria-label="Open navigation menu">
+          <span class="burger__bar"></span>
+          <span class="burger__bar"></span>
+          <span class="burger__bar"></span>
+        </button>
+      </div>
+    </div>
+    <span class="nav__hairline" aria-hidden="true"></span>
+  </header>
+
+  <!-- ══ Mobile navigation panel ══ -->
+  <div class="mobile-panel" id="mobilePanel" hidden>
+    <nav class="mobile-panel__nav" aria-label="Mobile">
+      <a class="mobile-panel__link" href="#work"><span class="mobile-panel__num">01</span><span>Work</span></a>
+      <a class="mobile-panel__link" href="#studio"><span class="mobile-panel__num">02</span><span>Studio</span></a>
+      <a class="mobile-panel__link" href="#services"><span class="mobile-panel__num">03</span><span>Services</span></a>
+      <a class="mobile-panel__link" href="#contact"><span class="mobile-panel__num">04</span><span>Contact</span></a>
+    </nav>
+    <div class="mobile-panel__foot">
+      <a href="/cdn-cgi/l/email-protection#99f1fcf5f5f6d9f6fbfcf5f0eaf2eaedecfdf0f6b7faf6f4"><span class="__cf_email__" data-cfemail="d4bcb1b8b8bb94bbb6b1b8bda7bfa7a0a1b0bdbbfab7bbb9">[email&#160;protected]</span></a>
+      <span>Los Angeles · Berlin</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- ══ Hero ══ -->
+    <section class="hero" id="top">
+      <div class="hero__bg">
+        <img class="hero__img" id="heroImg" src="./assets/hero-atmosphere-cinematic.jpg" alt=""
+          fetchpriority="high" decoding="async">
+        <span class="hero__scrim" aria-hidden="true"></span>
+        <span class="hero__grid-lines" aria-hidden="true"></span>
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__meta" data-reveal>
+          <span class="mono">Independent Studio</span>
+          <span class="mono">Est. 2016 — LA / Berlin</span>
+        </div>
+
+        <h1 class="hero__title" data-split-words>We make digital impact.</h1>
+
+        <div class="hero__foot">
+          <p class="hero__lead" data-reveal>
+            We are a studio of strategists, designers and engineers building games, brands and
+            digital experiences that refuse to blend in.
+          </p>
+          <div class="hero__cta" data-reveal>
+            <a class="pill" href="#contact" data-magnetic>Start a project</a>
+            <a class="ghost-link" href="#work">See selected work</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#work" aria-label="Scroll down to selected work">
+        <span class="scroll-cue__label mono">Scroll</span>
+        <span class="scroll-cue__track" aria-hidden="true"><span class="scroll-cue__dot"></span></span>
+      </a>
+    </section>
+
+    <!-- ══ Selected work ══ -->
+    <section class="section work" id="work" aria-labelledby="workTitle">
+      <div class="shell">
+        <header class="section__head">
+          <span class="mono section__index">01 / Selected Work</span>
+          <h2 class="section__title" id="workTitle" data-reveal>Projects we built to be remembered.</h2>
+          <p class="section__lead" data-reveal>
+            Five recent partnerships across games, culture and technology — every one of them
+            made from scratch, in-house.
+          </p>
+        </header>
+
+        <div class="work__grid">
+          <!-- 01 -->
+          <article class="work-card work-card--a" data-reveal-card>
+            <div class="work-card__media" data-parallax-media>
+              <img src="./assets/work-neon-exodus.jpg" alt="Neon Exodus — rain-lit brutalist megacity key art" loading="lazy" decoding="async">
+            </div>
+            <div class="work-card__meta">
+              <h3 class="work-card__title" id="wk1">Neon Exodus</h3>
+              <p class="work-card__sub mono">Game World · 2025</p>
+            </div>
+            <span class="work-card__chip mono" aria-hidden="true">View</span>
+            <button class="work-card__hit" type="button" data-project="neon-exodus" aria-haspopup="dialog"
+              aria-labelledby="wk1"><span class="sr-only">Open project details</span></button>
+          </article>
+
+          <!-- 02 -->
+          <article class="work-card work-card--b" data-reveal-card>
+            <div class="work-card__media" data-parallax-media>
+              <img src="./assets/work-voidrunner.jpg" alt="Voidrunner — matte black interceptor craft in a hangar void" loading="lazy" decoding="async">
+            </div>
+            <div class="work-card__meta">
+              <h3 class="work-card__title" id="wk2">Voidrunner</h3>
+              <p class="work-card__sub mono">Game Identity · 2025</p>
+            </div>
+            <span class="work-card__chip mono" aria-hidden="true">View</span>
+            <button class="work-card__hit" type="button" data-project="voidrunner" aria-haspopup="dialog"
+              aria-labelledby="wk2"><span class="sr-only">Open project details</span></button>
+          </article>
+
+          <!-- 03 -->
+          <article class="work-card work-card--c" data-reveal-card>
+            <div class="work-card__media" data-parallax-media>
+              <img src="./assets/work-helio-brand.jpg" alt="Helio — embossed matte black brand artifact photographed in raking light" loading="lazy" decoding="async">
+            </div>
+            <div class="work-card__meta">
+              <h3 class="work-card__title" id="wk3">Helio</h3>
+              <p class="work-card__sub mono">Brand Identity · 2024</p>
+            </div>
+            <span class="work-card__chip mono" aria-hidden="true">View</span>
+            <button class="work-card__hit" type="button" data-project="helio" aria-haspopup="dialog"
+              aria-labelledby="wk3"><span class="sr-only">Open project details</span></button>
+          </article>
+
+          <!-- 04 -->
+          <article class="work-card work-card--d" data-reveal-card>
+            <div class="work-card__media" data-parallax-media>
+              <img src="./assets/work-signal-cinema.jpg" alt="Signal / Noise — long-exposure light ribbons through black space" loading="lazy" decoding="async">
+            </div>
+            <div class="work-card__meta">
+              <h3 class="work-card__title" id="wk4">Signal / Noise</h3>
+              <p class="work-card__sub mono">Motion Design · 2024</p>
+            </div>
+            <span class="work-card__chip mono" aria-hidden="true">View</span>
+            <button class="work-card__hit" type="button" data-project="signal-noise" aria-haspopup="dialog"
+              aria-labelledby="wk4"><span class="sr-only">Open project details</span></button>
+          </article>
+
+          <!-- 05 -->
+          <article class="work-card work-card--e" data-reveal-card>
+            <div class="work-card__media" data-parallax-media>
+              <img src="./assets/work-atlas-interface.jpg" alt="Atlas OS — dark experimental interface panel with wireframe terrain" loading="lazy" decoding="async">
+            </div>
+            <div class="work-card__meta">
+              <h3 class="work-card__title" id="wk5">Atlas OS</h3>
+              <p class="work-card__sub mono">Digital Experience · 2023</p>
+            </div>
+            <span class="work-card__chip mono" aria-hidden="true">View</span>
+            <button class="work-card__hit" type="button" data-project="atlas-os" aria-haspopup="dialog"
+              aria-labelledby="wk5"><span class="sr-only">Open project details</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Studio ══ -->
+    <section class="section studio" id="studio" aria-labelledby="studioTitle">
+      <div class="shell">
+        <header class="section__head">
+          <span class="mono section__index">02 / Studio</span>
+        </header>
+
+        <div class="studio__grid">
+          <div class="studio__copy">
+            <h2 class="studio__statement" id="studioTitle" data-split-words data-accent="remember">
+              We build the parts of a brand people actually remember.
+            </h2>
+            <div class="studio__cols">
+              <p class="studio__p" data-reveal>
+                OBELISK is a small, senior team. We take one idea and carry it from the first
+                strategy workshop to the final line of production code, so the work never loses
+                its edge in translation.
+              </p>
+              <ol class="studio__disciplines">
+                <li data-reveal><span class="mono">Strategy</span> Positioning, audience research, naming and creative platforms.</li>
+                <li data-reveal><span class="mono">Design</span> Identity systems, art direction, interface and motion craft.</li>
+                <li data-reveal><span class="mono">Development</span> Frontend engineering, WebGL, game systems and design tooling.</li>
+              </ol>
+            </div>
+            <a class="ghost-link" href="#services" data-reveal>What we do</a>
+          </div>
+
+          <figure class="studio__figure" data-reveal-card>
+            <div class="studio__media" data-parallax-media>
+              <img src="./assets/studio-atelier.jpg" alt="The OBELISK studio atelier at night, lit by a single strip light" loading="lazy" decoding="async">
+            </div>
+            <figcaption class="mono studio__caption">LA studio, 02:40 — mid-build on Neon Exodus</figcaption>
+          </figure>
+        </div>
+
+        <dl class="studs" data-reveal>
+          <div class="stud"><dt class="mono">Years</dt><dd>09</dd></div>
+          <div class="stud"><dt class="mono">Projects shipped</dt><dd>140+</dd></div>
+          <div class="stud"><dt class="mono">Team</dt><dd>18</dd></div>
+          <div class="stud"><dt class="mono">Awards</dt><dd>27</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ══ Services ══ -->
+    <section class="section services" id="services" aria-labelledby="servicesTitle">
+      <div class="shell">
+        <header class="section__head">
+          <span class="mono section__index">03 / Services</span>
+          <h2 class="section__title" id="servicesTitle" data-reveal>Everything the launch actually needs.</h2>
+        </header>
+
+        <ul class="services__list">
+          <li class="service" data-reveal>
+            <span class="service__num mono">01</span>
+            <span class="service__name">Creative Direction</span>
+            <span class="service__note">Where the work goes and why it matters</span>
+            <span class="service__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="square" />
+              </svg>
+            </span>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num mono">02</span>
+            <span class="service__name">Brand Identity</span>
+            <span class="service__note">Naming, systems, type and art direction</span>
+            <span class="service__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="square" />
+              </svg>
+            </span>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num mono">03</span>
+            <span class="service__name">Website Design</span>
+            <span class="service__note">Editorial, interactive, conversion-aware</span>
+            <span class="service__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="square" />
+              </svg>
+            </span>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num mono">04</span>
+            <span class="service__name">Frontend Development</span>
+            <span class="service__note">Performance-obsessed, accessible, hand-written</span>
+            <span class="service__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="square" />
+              </svg>
+            </span>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num mono">05</span>
+            <span class="service__name">Motion Design</span>
+            <span class="service__note">Titles, in-game loops, interaction choreography</span>
+            <span class="service__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="square" />
+              </svg>
+            </span>
+          </li>
+          <li class="service" data-reveal>
+            <span class="service__num mono">06</span>
+            <span class="service__name">Digital Experiences</span>
+            <span class="service__note">Launches, installs, WebGL worlds, prototypes</span>
+            <span class="service__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 12h15M13 6l6 6-6 6" stroke-linecap="square" />
+              </svg>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══ Marquee ══ -->
+    <section class="marquee" aria-label="Studio disciplines">
+      <div class="marquee__viewport" data-marquee>
+        <div class="marquee__track">
+          <span class="marquee__set">
+            <span class="marquee__item">Strategy</span><span class="marquee__sep" aria-hidden="true">—</span>
+            <span class="marquee__item">Design</span><span class="marquee__sep" aria-hidden="true">—</span>
+            <span class="marquee__item">Development</span><span class="marquee__sep" aria-hidden="true">—</span>
+            <span class="marquee__item">Digital Culture</span><span class="marquee__sep" aria-hidden="true">—</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Contact ══ -->
+    <section class="section contact" id="contact" aria-labelledby="contactTitle">
+      <div class="contact__bg" aria-hidden="true">
+        <img src="./assets/contact-horizon.jpg" alt="" loading="lazy" decoding="async">
+        <span class="contact__scrim"></span>
+      </div>
+
+      <div class="shell contact__inner">
+        <span class="mono section__index">04 / Contact</span>
+        <h2 class="contact__title" id="contactTitle" data-split-words>Have a good project?</h2>
+        <p class="contact__lead" data-reveal>
+          Tell us what you are building. We reply to every serious brief within two working days —
+          usually with questions, occasionally with a sketch.
+        </p>
+
+        <div class="contact__actions" data-reveal>
+          <a class="pill pill--lg" href="/cdn-cgi/l/email-protection#81e9e4ededeec1eee3e4ede8f2eaf2f5f4e5e8eeafe2eeecbef2f4e3ebe4e2f5bcd1f3eeebe4e2f5a4b3b1e4eff0f4e8f3f8" data-magnetic>Start a project</a>
+          <a class="contact__mail" href="/cdn-cgi/l/email-protection#147c7178787b547b7671787d677f676061707d7b3a777b79">
+            <span class="contact__mail-text"><span class="__cf_email__" data-cfemail="18707d74747758777a7d74716b736b6c6d7c7177367b7775">[email&#160;protected]</span></span>
+            <span class="contact__mail-line" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div class="contact__details" data-reveal>
+          <div>
+            <span class="mono">Los Angeles</span>
+            <p>1102 Mateo St, Arts District<br>CA 90021</p>
+          </div>
+          <div>
+            <span class="mono">Berlin</span>
+            <p>Oranienstraße 187<br>10999 Kreuzberg</p>
+          </div>
+          <div>
+            <span class="mono">New business</span>
+            <p><a href="/cdn-cgi/l/email-protection#e9818c858586a9868b8c85809a829a9d9c8d8086c78a8684"><span class="__cf_email__" data-cfemail="aac2cfc6c6c5eac5c8cfc6c3d9c1d9dedfcec3c584c9c5c7">[email&#160;protected]</span></a><br><a href="tel:+12135550188">+1 213 555 0188</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══ Footer ══ -->
+  <footer class="footer">
+    <div class="shell footer__inner">
+      <a class="footer__logo" href="#top">
+        <span class="nav__logo-mark" aria-hidden="true"></span>
+        <span>OBELISK</span>
+      </a>
+
+      <nav class="footer__socials" aria-label="Social">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer">X</a>
+      </nav>
+
+      <div class="footer__legal">
+        <span class="mono">© <span id="year">2026</span> OBELISK Studio. All rights reserved.</span>
+        <a class="footer__top mono" href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══ Project detail overlay ══ -->
+  <div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="overlayTitle" hidden>
+    <div class="overlay__scrim" data-overlay-close></div>
+    <div class="overlay__panel" role="document">
+      <button class="overlay__close" id="overlayClose" type="button" aria-label="Close project details">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke-linecap="square" />
+        </svg>
+      </button>
+
+      <div class="overlay__media">
+        <img id="overlayImg" src="./assets/work-neon-exodus.jpg" alt="" decoding="async">
+      </div>
+
+      <div class="overlay__body">
+        <span class="mono" id="overlayMeta">Game World · 2025</span>
+        <h2 class="overlay__title" id="overlayTitle">Neon Exodus</h2>
+        <p class="overlay__text" id="overlayText"></p>
+        <ul class="overlay__tags" id="overlayTags"></ul>
+        <a class="pill" id="overlayLink" href="#contact" data-magnetic>Talk about a project like this</a>
+      </div>
+    </div>
+  </div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./script.js"></script>
+</body>
+</html>
